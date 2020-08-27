@@ -1,0 +1,88 @@
+t_start = 0
+t_end   = 6000
+dt = 0.01
+
+write_steps = 10
+epsilon = 1
+
+t_app1_start = 60
+t_app1_end   = 180
+t_app2_start = 180
+t_app2_end   = 181
+
+scan_start = 1
+scan_end = 2
+scan_steps = 0
+
+w_gaba = 1 #0.1
+r_beta2_da = 1
+s_alpha7_da = 0.5
+
+da_rest = 0.1
+gaba_rest = 0
+
+alpha7 = 1
+beta2  = 1
+
+w_glu = 1
+glu_da = 1
+glu_gaba = 1
+w_ach = 1 
+ach_da = 1
+ach_gaba = 1 
+
+choice = 0
+# 3 nic + ach
+# 4 nic + mpfc
+# 5 ach + mpfc
+# 6 nic + ach + mpfc
+
+# 0
+nicotine_rest    = 0
+nicotine_applied1_start = 1
+nicotine_applied1_end = 2
+nicotine_applied1_steps = 0
+nicotine_applied2 = 0
+# in sec
+tau_nicotine = 60
+
+# 1
+# acetylcholine
+ach_1_start = 0.384
+ach_1_end  = 1
+ach_1_steps = 0
+
+# 2 
+# glutamate activity
+glu_2_start = 0.000568
+glu_2_end   = 0.01
+glu_2_steps = 0
+
+
+# alpha4 beta2
+n_act_beta2 = 1.05
+K_act_beta2 = 30
+potency_beta2 = 3
+
+K_d_beta2  = 0.061
+n_d_beta2  = 0.5
+# in min
+tau_d_max_beta2 = 10 # 87 #10
+# in sec
+tau_d_base_beta2 = 0.5
+K_tau_d_beta2 = 0.11
+n_tau_d_beta2 = 3
+
+# alpha7
+n_act_alpha7 = 1.73
+K_act_alpha7 = 80
+potency_alpha7 = 2
+
+K_d_alpha7  = 1.3
+n_d_alpha7  = 2
+# in min
+tau_d_max_alpha7 = 2
+# in sec
+tau_d_base_alpha7 = 0.05
+K_tau_d_alpha7 = 1.73
+n_tau_d_alpha7 = 2

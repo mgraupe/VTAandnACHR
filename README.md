@@ -1,20 +1,24 @@
-# Model : Ventral tegmental network area and nicotinic acetylcholine receptors
+# Model : Ventral tegmental area (VTA) network and nicotinic acetylcholine receptors
 
 The C++ code of this repository gave rise to the results presented in :
-**Graupner M, Maex R and Gutkin B 2013. Endogenous cholinergic inputs and local circuit mechanisms govern the phasic mesolimbic dopamine response to nicotine. PLoS Comput Biol 9(8): e1003183, doi:10.1371/journal.pcbi.1003183. **
+
+> **Graupner M, Maex R and Gutkin B 2013. Endogenous cholinergic inputs and local circuit mechanisms govern the phasic mesolimbic dopamine response to nicotine. PLoS Comput Biol 9(8): e1003183, doi:10.1371/journal.pcbi.1003183.**
 
 
-### Objective of the Course 
+### Content
 
-The field of neuroscience is becoming more and more quantitative and this development is accompanied by
-of an ever-increasing stream of data derived from the brain. It is essential that this development
-is performed by neuroscientists who are ready and able to process this data. Data science is an emerging field
-dedicated to understanding principles in data sets. This teaching unit aims to introduce the
-principles data science applied to neural data.
+**nicotine_exposure**
 
+The C++ code allows simulate nicotine exposures to the
+VTA. One can loop over different applied Ni concentrations, different
+constant cholinergic input levels (ACh loop) and different constant
+glutamatergic input levels (Glu loop). The VTA and nAChR models are 
+specified in the `motif.cpp` file. 
 
-Concretely, *Neural Data Science with Python* aims to teach how to handle, analyze, visualize neural data, to create models and to run simulations of neural systems
-using the Python programming language. The students will be acquire to use different general and specific Python libraries
-such as numpy, scipy, matplotlib, pandas, brian and the use of the Jupyter Notebook environment.
+The code can be complied using the g++ complier with the `make` command using the `Makefile`. Compliation will generate the executable program `nicotine`. 
 
+Execution of the program requires the `par_nicotine.par` file which specifies all model parameters. 
 
+### Requires
+
+- `g++` compiler
