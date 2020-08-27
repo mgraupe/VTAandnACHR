@@ -7,7 +7,7 @@ The C++ code of this repository gave rise to the results presented in :
 
 ### Content
 
-**nicotine_exposure**
+**nicotine_program**
 
 The C++ code allows to simulate nicotine exposures to the
 VTA. One can loop over different applied nicotine (Nic loop) concentrations, different
